@@ -15,7 +15,7 @@ from aiogram.types \
 
 import ai_model
 
-TOKEN = "7911900370:AAH8I5skyucy8wXUXPYLB4x3tNsgl0CJxiE"#getenv("BOT_TOKEN")
+TOKEN = "7911900370:AAH8I5skyucy8wXUXPYLB4x3tNsgl0CJxiE"
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher()
 
