@@ -1,0 +1,740 @@
+[
+    {
+      "text_input": "Hi i am a streamer but i know nothing about PC components. I am usally streaming new video games such as \"The witcher 3\", \"Apex\", \"Call of duty\" and \"Cyberpunk 2077\". But my PC just died and i am looking for a new one. Can you build me a PC with all required compoennts?",
+      "output": [
+        {
+          "name": "AMD Ryzen 7 7700X",
+          "price": "~$350",
+          "description": "Excellent performance for gaming and streaming, providing a good balance of cores and clock speed."
+        },
+        {
+          "name": "Noctua NH-D15",
+          "price": "~$100",
+          "description": "A high-performance air cooler to keep your CPU cool and quiet, even under heavy load."
+        },
+        {
+          "name": "MSI B650 Tomahawk WIFI",
+          "price": "~$200",
+          "description": "A reliable and feature-rich motherboard that supports the Ryzen 7 7700X and offers good connectivity."
+        },
+        {
+          "name": "Corsair Vengeance DDR5 32GB (2x16GB) 6000MHz",
+          "price": "~$130",
+          "description": "32GB of fast RAM ensures smooth gameplay and efficient streaming."
+        },
+        {
+          "name": "NVIDIA GeForce RTX 4070",
+          "price": "~$600",
+          "description": "Provides excellent performance for 1440p and even 4K gaming, crucial for high-quality streams."
+        },
+        {
+          "name": "Kingston KC3000 1TB NVMe PCIe 4.0 SSD",
+          "price": "~$80",
+          "description": "A fast NVMe SSD for your operating system, games, and streaming software, ensuring quick loading times."
+        },
+        {
+          "name": "Western Digital Caviar Blue 2TB HDD (Optional)",
+          "price": "~$60",
+          "description": "For additional game storage or archiving streams."
+        },
+        {
+          "name": "Fractal Design Meshify 2 Compact",
+          "price": "~$100",
+          "description": "Excellent airflow for optimal cooling, keeping your components running at their best."
+        },
+        {
+          "name": "Corsair RM850x (2021) 850W 80+ Gold",
+          "price": "~$150",
+          "description": "A reliable and efficient power supply to handle the demands of your system."
+        }
+      ]
+    },
+    {
+      "text_input": "Can you recomend me 5 laptops suitable for a student with engineering/math major?",
+      "output": [
+        {
+          "name": "Lenovo ThinkPad X1 Carbon Gen 11",
+          "price": "~$1500+",
+          "description": "Excellent build quality, powerful Intel processors, great keyboard, and long battery life. Perfect for demanding tasks like CAD software and simulations."
+        },
+        {
+          "name": "Apple MacBook Pro 14\" (M2 Pro or Max)",
+          "price": "~$2000+",
+          "description": "Powerful M2 chips excel at code compilation and data analysis. Sleek design, beautiful display, and long battery life."
+        },
+        {
+          "name": "Dell XPS 15",
+          "price": "~$1200+",
+          "description": "Strong performance with dedicated graphics options, good build quality, and a vibrant display. Handles demanding applications well while remaining relatively portable."
+        },
+        {
+          "name": "Acer Aspire 5 A515-57-749K",
+          "price": "~$700",
+          "description": "A solid and affordable option with a decent processor and enough power for general engineering tasks, programming, and multitasking."
+        },
+        {
+          "name": "Asus Zenbook S 13 OLED",
+          "price": "~$1000+",
+          "description": "Lightweight, ultra-portable, with a beautiful OLED display. Excellent for note-taking, coding on the go, and general productivity."
+        }
+      ]
+    },
+    {
+      "text_input": "I am building a PC for mother, she is a teacher and need to attend her virtual lectures in zoom. She loves to watch youtube and read recepie in Instagram.",
+      "output": [
+        {
+          "name": "AMD Ryzen 5 7600G",
+          "price": "~$230",
+          "description": "Includes integrated graphics powerful enough for basic tasks and video streaming, eliminating the need for a separate graphics card."
+        },
+        {
+          "name": "ASRock B650M PG Riptide WiFi",
+          "price": "~$130",
+          "description": "Supports the Ryzen 5 7600G and offers decent connectivity, including Wi-Fi."
+        },
+        {
+          "name": "Corsair Vengeance LPX 16GB (2x8GB) DDR5 5600MHz",
+          "price": "~$60",
+          "description": "16GB is plenty for smooth multitasking and web browsing."
+        },
+        {
+          "name": "Kingston NV2 500GB NVMe PCIe 4.0 SSD",
+          "price": "~$35",
+          "description": "A fast and affordable SSD for the operating system and applications, providing quick boot and loading times."
+        },
+        {
+          "name": "Fractal Design Focus G Mini",
+          "price": "~$60",
+          "description": "A compact and affordable case with good airflow."
+        },
+        {
+          "name": "Corsair CX550F RGB 550W 80+ Bronze",
+          "price": "~$70",
+          "description": "A reliable power supply, more than sufficient for this system."
+        }
+      ]
+    },
+    {
+      "text_input": "I am a programmer and want to buy a desktop PC for my work. Usually i am working with Qt and C++, sometimes i have to write python scripts. I using Linux as my OS and code in vs code.",
+      "output": [
+        {
+          "name": "AMD Ryzen 7 7700X",
+          "price": "~$350",
+          "description": "Excellent multi-core performance for compiling code and running virtual machines."
+        },
+        {
+          "name": "Scythe Fuma 2 Rev. B",
+          "price": "~$60",
+          "description": "A high-performance air cooler to keep your CPU cool and quiet during long compiling sessions."
+        },
+        {
+          "name": "MSI B650 Tomahawk WIFI",
+          "price": "~$200",
+          "description": "A reliable motherboard with good connectivity and features, including Wi-Fi and multiple NVMe slots."
+        },
+        {
+          "name": "Corsair Vengeance LPX 32GB (2x16GB) DDR5 5600MHz",
+          "price": "~$110",
+          "description": "32GB ensures smooth multitasking, even with multiple VMs or large projects."
+        },
+        {
+          "name": "NVIDIA GeForce RTX 3060 or AMD Radeon RX 6600 XT (Optional)",
+          "price": "~$250-400",
+          "description": "If you need a dedicated GPU, these are good choices for occasional graphical tasks."
+        },
+        {
+          "name": "Kingston KC3000 1TB NVMe PCIe 4.0 SSD",
+          "price": "~$80",
+          "description": "A fast SSD for your operating system, applications, and project files, significantly reducing load times."
+        },
+        {
+          "name": "Seagate Barracuda Compute 2TB HDD (Optional)",
+          "price": "~$50",
+          "description": "For additional storage of less frequently accessed files."
+        },
+        {
+          "name": "Fractal Design Meshify 2 Compact",
+          "price": "~$100",
+          "description": "Good airflow to keep components cool."
+        },
+        {
+          "name": "Corsair RM750x (2021) 750W 80+ Gold",
+          "price": "~$130",
+          "description": "A reliable and efficient power supply."
+        }
+      ]
+    },
+    {
+      "text_input": "I'm a gamer looking for a high-end PC build for 4K gaming.  I want the best possible graphics card and a high refresh rate monitor. My budget is  around $3000.",
+      "output": [
+        {
+          "name": "Intel Core i9-13900K",
+          "price": "~$580",
+          "description": "Top-tier gaming CPU, providing excellent performance in demanding games."
+        },
+        {
+          "name": "NZXT Kraken Z73 RGB",
+          "price": "~$280",
+          "description": "A high-performance liquid cooler to keep the powerful CPU running cool and quiet."
+        },
+        {
+          "name": "ASUS ROG Maximus Z790 Hero",
+          "price": "~$600",
+          "description": "A premium motherboard with excellent features and overclocking potential."
+        },
+        {
+          "name": "G.Skill Trident Z5 Neo RGB 64GB (2x32GB) DDR5 6000MHz CL30",
+          "price": "~$250",
+          "description": "64GB of high-speed RAM ensures smooth performance even in the most demanding games."
+        },
+        {
+          "name": "NVIDIA GeForce RTX 4090",
+          "price": "~$1600",
+          "description": "The best consumer GPU available, providing incredible 4K gaming performance."
+        },
+        {
+          "name": "Samsung 990 Pro 2TB NVMe PCIe 4.0 SSD",
+          "price": "~$160",
+          "description": "A blazing-fast SSD for your operating system and games, minimizing load times."
+        },
+        {
+          "name": "Lian Li O11 Dynamic EVO",
+          "price": "~$200",
+          "description": "A stylish and spacious case with great airflow."
+        },
+        {
+          "name": "Corsair HX1000 1000W 80+ Platinum",
+          "price": "~$230",
+          "description": "A high-wattage, reliable power supply to handle the demanding components."
+        }
+      ],
+      "budget_notes": "This build is slightly over the $3000 budget. To reduce costs, consider 32GB of RAM or a less expensive motherboard and case."
+    },
+    {
+      "text_input": "I need a cheap laptop for basic web browsing, email, and word processing. I don't need anything fancy.",
+      "output": [
+        {
+          "name": "Lenovo Chromebook Duet 3 (or similar)",
+          "price": "~$200-300",
+          "description": "Lightweight, fast-booting, and highly affordable. Ideal for basic tasks and relies primarily on cloud storage."
+        },
+        {
+          "name": "Acer Aspire 5 A515-45-R74Z (or similar)",
+          "price": "~$400-500",
+          "description": "A budget-friendly Windows laptop suitable for basic tasks with more software compatibility."
+        },
+        {
+          "name": "Refurbished Dell Latitude or HP ProBook (from a reputable seller)",
+          "price": "~$200-400",
+          "description": "Refurbished business laptops often provide good performance and build quality at a lower price. (Ensure a warranty)"
+        }
+      ]
+    },
+    {
+      "text_input": "I'm a video editor working with 4K footage. I need a powerful workstation with a lot of storage.",
+      "output": [
+        {
+          "name": "AMD Ryzen 9 7950X3D",
+          "price": "~$650",
+          "description": "Excellent multi-core performance, especially beneficial for video rendering and encoding."
+        },
+        {
+          "name": "Noctua NH-D15",
+          "price": "~$100",
+          "description": "A high-performance air cooler to keep the CPU cool and quiet during long rendering sessions."
+        },
+        {
+          "name": "ASUS ProArt X670E-Creator WiFi",
+          "price": "~$450",
+          "description": "A workstation-class motherboard with excellent connectivity and features, designed for professional workloads."
+        },
+        {
+          "name": "Corsair Vengeance DDR5 64GB (4x16GB) 6000MHz",
+          "price": "~$250",
+          "description": "64GB of RAM is recommended for smooth multitasking and handling large video projects."
+        },
+        {
+          "name": "NVIDIA GeForce RTX 4090",
+          "price": "~$1600",
+          "description": "The most powerful consumer GPU, providing excellent performance for video editing and rendering."
+        },
+        {
+          "name": "Samsung 990 Pro 2TB NVMe PCIe 4.0 SSD",
+          "price": "~$160",
+          "description": "A blazing-fast SSD for your operating system, applications, and current projects."
+        },
+        {
+          "name": "Samsung 870 QVO 8TB SATA SSD",
+          "price": "~$450",
+          "description": "A large capacity SSD for storing your video footage and project files."
+        },
+        {
+          "name": "Western Digital 18TB WD Gold HDD (or similar large HDD)",
+          "price": "~$350",
+          "description": "For archiving completed projects and backups."
+        },
+        {
+          "name": "Fractal Design Define 7 XL",
+          "price": "~$200",
+          "description": "A spacious case with excellent airflow and noise dampening."
+        },
+        {
+          "name": "Corsair HX1000 1000W 80+ Platinum",
+          "price": "~$240",
+          "description": "A high-wattage, reliable power supply to handle the demanding components."
+        }
+      ]
+    },
+    {
+        "text_input": "I'm a music producer and need a PC for audio recording and mixing. Low latency is very important.",
+        "output": [
+          {
+            "name": "Intel Core i7-13700K or AMD Ryzen 7 7700X",
+            "price": "~$400",
+            "description": "Excellent multi-core performance for handling demanding audio processing tasks."
+          },
+          {
+            "name": "Noctua NH-U12S Redux",
+            "price": "~$70",
+            "description": "A quiet and efficient air cooler to keep the system stable during long recording sessions."
+          },
+          {
+            "name": "ASUS ROG Strix Z790-A Gaming WiFi D4 (Intel) or MSI MPG B650 Edge WiFi (AMD)",
+            "price": "~$250-300",
+            "description": "Motherboards with good onboard audio and driver support are important for low latency."
+          },
+          {
+            "name": "Corsair Vengeance LPX 32GB (2x16GB) DDR4 3200MHz",
+            "price": "~$100",
+            "description": "32GB is plenty for most music production workloads. DDR4 is generally preferred for its stability in audio applications."
+          },
+          {
+            "name": "Integrated Graphics",
+            "price": "Included with CPU",
+            "description": "Sufficient for music production unless you're also doing graphically intensive tasks."
+          },
+          {
+            "name": "Samsung 980 Pro 1TB NVMe PCIe 4.0 SSD",
+            "price": "~$80",
+            "description": "Fast storage for your operating system, DAW, and plugins."
+          },
+          {
+            "name": "Crucial MX500 2TB SATA SSD",
+            "price": "~$120",
+            "description": "A reliable and cost-effective SSD for storing your audio projects."
+          },
+          {
+            "name": "Fractal Design Define 7 Compact",
+            "price": "~$130",
+            "description": "A quiet case with good airflow."
+          },
+          {
+            "name": "Seasonic FOCUS GX-650 650W 80+ Gold",
+            "price": "~$100",
+            "description": "A reliable and efficient power supply."
+          }
+        ],
+        "peripheral_notes": "A high-quality audio interface (e.g., Focusrite Scarlett 18i20 or Universal Audio Apollo Twin X) is essential for low-latency recording and professional audio quality. (Price varies widely)"
+      },
+      {
+        "text_input": "I'm a graphic designer and need a PC with a good monitor for color accuracy.",
+        "output": [
+          {
+            "name": "AMD Ryzen 7 7700X or Intel Core i7-13700K",
+            "price": "~$350-400",
+            "description": "Excellent multi-core performance for handling demanding design tasks."
+          },
+          {
+            "name": "be quiet! Dark Rock Pro 4",
+            "price": "~$90",
+            "description": "A quiet and high-performance air cooler."
+          },
+          {
+            "name": "MSI B650 Tomahawk WIFI (AMD) or ASUS ROG Strix Z790-A Gaming WiFi D4 (Intel)",
+            "price": "~$250-300",
+            "description": "Reliable and feature-rich motherboards."
+          },
+          {
+            "name": "Corsair Vengeance LPX 32GB (2x16GB) DDR5 5600MHz (or DDR4 3200MHz)",
+            "price": "~$110-130",
+            "description": "32GB of RAM is recommended for smooth multitasking with design applications. Use DDR4 if using an older platform."
+          },
+          {
+            "name": "NVIDIA GeForce RTX 4070",
+            "price": "~$600",
+            "description": "Excellent performance for graphic design workloads and color accuracy."
+          },
+          {
+            "name": "NVIDIA RTX A2000 (Alternative)",
+            "price": "(Price varies)",
+            "description": "Consider this if your software specifically benefits from professional GPU features."
+          },
+          {
+            "name": "Samsung 980 Pro 1TB NVMe PCIe 4.0 SSD",
+            "price": "~$80",
+            "description": "A fast SSD for your operating system, applications, and design files."
+          },
+          {
+            "name": "Western Digital Blue 2TB HDD (Optional)",
+            "price": "~$50",
+            "description": "For archiving completed projects."
+          },
+          {
+            "name": "Fractal Design Meshify 2 Compact",
+            "price": "~$100",
+            "description": "A case with good airflow."
+          },
+          {
+            "name": "Corsair RM750x (2021) 750W 80+ Gold",
+            "price": "~$130",
+            "description": "A reliable and efficient power supply."
+          }
+        ],
+        "peripheral_notes": "**Monitor (Crucial):** Look for IPS/OLED panel, factory calibration, wide color gamut (Adobe RGB/DCI-P3), and hardware calibration capability. **Recommendations:** BenQ PD2700U/PD3200U (excellent value), EIZO ColorEdge CG279X or similar (high-end).  A comfortable keyboard and mouse are also important for long design sessions."
+      },
+      {
+        "text_input": "I want a small and quiet PC for my home theater.",
+        "output": [
+          {
+            "name": "AMD Ryzen 5 7600G (with integrated graphics) or Intel Core i5-13400",
+            "price": "~$230 / $280",
+            "description": "Good performance for media playback and general use.  Intel CPU requires a low-profile graphics card."
+          },
+          {
+            "name": "Noctua NH-L9a-AM4 chromax.black (AMD) or Noctua NH-L9i-17xx chromax.black (Intel)",
+            "price": "~$80",
+            "description": "Low-profile coolers designed for small form factor builds, prioritizing quiet operation."
+          },
+          {
+            "name": "ASRock B650M-ITX/ax WiFi (AMD) or ASUS ROG Strix B760-I Gaming WiFi (Intel)",
+            "price": "~$200 / $280",
+            "description": "Mini-ITX motherboards for a small footprint."
+          },
+          {
+            "name": "Corsair Vengeance LPX 16GB (2x8GB) DDR5 5600MHz (AMD) or DDR4 3200MHz (Intel)",
+            "price": "~$60 / $50",
+            "description": "16GB is sufficient for a home theater PC."
+          },
+          {
+            "name": "ASUS GeForce GT 1030 2GB GDDR5 (Optional - for Intel Build)",
+            "price": "~$100",
+            "description": "A low-profile, passively cooled graphics card for silent operation (only needed for the Intel CPU)."
+          },
+          {
+            "name": "Kingston KC3000 1TB NVMe PCIe 4.0 SSD",
+            "price": "~$80",
+            "description": "Fast and quiet storage."
+          },
+          {
+            "name": "Fractal Design Node 202",
+            "price": "~$120",
+            "description": "A compact and stylish case designed for home theater PCs."
+          },
+          {
+            "name": "Corsair SF450 450W 80+ Platinum",
+            "price": "~$100",
+            "description": "A high-quality, small form factor power supply with efficient and quiet operation."
+          }
+        ],
+        "peripheral_notes": "**Remote Control:** A wireless keyboard with a built-in trackpad or a dedicated HTPC remote control is recommended for easy navigation.  **HDMI Cable:** A high-quality HDMI cable is needed to connect to your TV or receiver. (Prices vary for both)"
+      },
+      {
+        "text_input": "What's the best prebuilt gaming PC under $1500?",
+        "output": [
+          {
+            "name": "GPU",
+            "price": "Varies (Target: RTX 4060 Ti, RX 7700 XT/7800 XT, or RTX 3070)",
+            "description": "Essential for good gaming performance at 1080p and 1440p."
+          },
+          {
+            "name": "CPU",
+            "price": "Varies (Target: Intel Core i5-13400(F)/13600K or AMD Ryzen 5 7600(X))",
+            "description": "Provides a good balance of gaming performance and value."
+          },
+          {
+            "name": "RAM",
+            "price": "Varies (Target: 16GB DDR4 or DDR5)",
+            "description": "16GB is recommended for modern games."
+          },
+          {
+            "name": "Storage",
+            "price": "Varies (Target: 1TB NVMe SSD)",
+            "description": "A fast SSD is crucial for quick game loading."
+          },
+          {
+            "name": "Cooling",
+            "price": "Included in prebuilt (Ensure adequate cooling)",
+            "description": "Look for systems with at least two fans or liquid cooling."
+          }
+        ],
+        "additional_notes": "Prices for components in prebuilt systems will vary depending on the specific model and manufacturer.  This list provides target specifications to look for when choosing a prebuilt gaming PC under $1500."
+      },
+      {
+        "text_input": "I need a laptop for programming, but I also want to be able to play some games on it.",
+        "output": [
+          {
+            "name": "Lenovo Legion 5/5 Pro/7/7i",
+            "price": "~$1000 - $2000",
+            "description": "Excellent balance of performance, build quality, and price."
+          },
+          {
+            "name": "ASUS ROG Strix G15/G17",
+            "price": "~$1200 - $2500",
+            "description": "Powerful gaming laptops with good keyboards."
+          },
+          {
+            "name": "Acer Predator Helios 300",
+            "price": "~$1000 - $1800",
+            "description": "Another good option in the mid-range gaming laptop category."
+          },
+          {
+            "name": "Razer Blade 15",
+            "price": "~$1800 - $3000+",
+            "description": "Premium build quality, excellent performance, but more expensive."
+          },
+          {
+            "name": "MSI Stealth 15M",
+            "price": "~$1200 - $2000",
+            "description": "A thinner and more portable option if you prioritize portability over raw power."
+          },
+          {
+            "name": "Dell G15/G16",
+            "price": "~$800 - $1500",
+            "description": "Good budget-friendly gaming laptops."
+          }
+        ]
+      },
+      {
+        "text_input": "Я студент с низким бюджетом. Мне нужен ноутбук для заметок и написания рефератов.",
+        "output": [
+          {
+            "name": "Lenovo Chromebook Duet 3 (or similar)",
+            "price": "~$200-300",
+            "description": "Lightweight, fast-booting Chromebooks are ideal for basic tasks and rely primarily on cloud storage."
+          },
+          {
+            "name": "Acer Chromebook Spin 311 (or similar)",
+            "price": "~$200-300",
+            "description": "Another good Chromebook option for basic tasks."
+          },
+          {
+            "name": "Acer Aspire 5 (or similar)",
+            "price": "~$400-600",
+            "description": "A budget-friendly Windows laptop suitable for basic tasks and offers more software compatibility."
+          },
+          {
+            "name": "ASUS VivoBook 15 (or similar)",
+            "price": "~$400-600",
+            "description": "Another affordable Windows laptop option."
+          },
+          {
+            "name": "HP 15 (or similar)",
+            "price": "~$400-600",
+            "description": "A basic Windows laptop suitable for everyday tasks."
+          },
+          {
+            "name": "Refurbished Dell Latitude or HP ProBook (from a reputable seller)",
+            "price": "~$200-400",
+            "description": "Refurbished business laptops can offer good value. (Ensure a warranty)."
+          }
+        ]
+      },
+      {
+        "text_input": "Мне нужен ПК который потянет игры виртуальной реальности. Можешь ли ты мне что-то посоветовать?",
+        "output": [
+          {
+            "name": "Intel Core i7-13700K",
+            "price": "~$400",
+            "description": "A powerful processor for smooth VR gameplay."
+          },
+          {
+            "name": "Noctua NH-D15",
+            "price": "~$100",
+            "description": "A high-performance air cooler for efficient cooling."
+          },
+          {
+            "name": "ASUS ROG Strix Z790-A Gaming WiFi D4",
+            "price": "~$300",
+            "description": "A premium motherboard with excellent VR support."
+          },
+          {
+            "name": "Corsair Vengeance LPX 32GB (2x16GB) DDR5",
+            "price": "~$130",
+            "description": "32GB of RAM for optimal VR performance."
+          },
+          {
+            "name": "NVIDIA GeForce RTX 4070",
+            "price": "~$600",
+            "description": "A high-performance graphics card essential for VR."
+          },
+          {
+            "name": "Samsung 980 Pro 1TB NVMe PCIe 4.0 SSD",
+            "price": "~$90",
+            "description": "A fast SSD for quick game loading."
+          },
+          {
+            "name": "Fractal Design Meshify 2 Compact",
+            "price": "~$100",
+            "description": "A well-ventilated case for optimal cooling."
+          },
+          {
+            "name": "Corsair RM750x (2021) 750W 80+ Gold",
+            "price": "~$130",
+            "description": "A reliable and efficient power supply."
+          }
+        ]
+      },
+      {
+        "text_input": "Привет, расскажи мне про бешенство у людей.",
+        "output": []
+      },
+      {
+        "text_input": "Weather in London",
+        "output": []
+      },
+      {
+        "text_input": "I am selecting a laptop for my work. I am a salesman and can go to another country to represnt my product. I have to create presentations and take notes. I love to save time by doing it in airplane. Can you suggest me a laptop?",
+        "output": [
+          {
+            "name": "Lenovo ThinkPad X1 Carbon Gen 11",
+            "price": "~$1500+",
+            "description": "Lightweight, durable, excellent battery life, great keyboard."
+          },
+          {
+            "name": "Dell XPS 13 Plus",
+            "price": "~$1500+",
+            "description": "Lightweight, excellent battery life, bright display, good keyboard."
+          },
+          {
+            "name": "Apple MacBook Air 13\" M2",
+            "price": "~$1000+",
+            "description": "Long battery life, excellent performance, lightweight, fantastic display."
+          },
+          {
+            "name": "HP EliteBook 840 G9",
+            "price": "~$1200+",
+            "description": "Robust security features, comfortable keyboard, good battery life."
+          },
+          {
+            "name": "Lenovo ThinkPad T14s",
+            "price": "~$1200+",
+            "description": "Durable, good keyboard, good battery life, designed for business travel."
+          },
+          {
+            "name": "ASUS Zenbook S 13 OLED",
+            "price": "~$1000+",
+            "description": "Lightweight, sleek design, beautiful OLED display, good battery life."
+          },
+          {
+            "name": "Acer Swift 3",
+            "price": "~$600+",
+            "description": "More affordable option with decent performance, good display, and reasonable battery life."
+          }
+        ]
+      },
+      {
+        "text_input": "I am build a PC for my father, he loves plaing old video games and watch old movies. He doesnt need much from a PC.",
+        "output": [
+          {
+            "name": "AMD Ryzen 5 7600G",
+            "price": "~$230",
+            "description": "CPU with integrated graphics, capable of handling older games and HD video playback."
+          },
+          {
+            "name": "ASRock B650M PG Riptide WiFi",
+            "price": "~$130",
+            "description": "A motherboard with good connectivity, including Wi-Fi."
+          },
+          {
+            "name": "Corsair Vengeance LPX 16GB (2x8GB) DDR5 5600MHz",
+            "price": "~$60",
+            "description": "16GB of RAM for smooth multitasking."
+          },
+          {
+            "name": "Crucial MX500 1TB SATA SSD",
+            "price": "~$60",
+            "description": "A reliable and affordable SSD for storage."
+          },
+          {
+            "name": "Fractal Design Focus G Mini",
+            "price": "~$60",
+            "description": "A compact and affordable PC case."
+          },
+          {
+            "name": "Corsair CX550F RGB 550W 80+ Bronze",
+            "price": "~$70",
+            "description": "A reliable power supply unit."
+          }
+        ]
+      },
+      {
+        "text_input": "I am a scientist in astrophysics. I am doing a research on black holes. I write articles about it all the time. I am in need of a laptop for my job",
+        "output": [
+          {
+            "name": "Lenovo ThinkPad P16 Gen 1",
+            "price": "~$2500+",
+            "description": "Powerful mobile workstation suitable for simulations and data analysis."
+          },
+          {
+            "name": "Dell Precision 5770",
+            "price": "~$2500+",
+            "description": "Another powerful workstation option with high-end CPU and GPU."
+          },
+          {
+            "name": "Lenovo ThinkPad X1 Extreme Gen 5",
+            "price": "~$1800+",
+            "description": "Balances performance and portability, with a dedicated GPU."
+          },
+          {
+            "name": "Dell XPS 15/17",
+            "price": "~$1800+",
+            "description": "Good balance of power and portability; offers dedicated GPUs."
+          },
+          {
+            "name": "MacBook Pro 16\" (M1 Pro/Max or M2 Pro/Max)",
+            "price": "~$2500+",
+            "description": "Excellent performance, especially if software is optimized for macOS."
+          }
+        ]
+      },
+      {
+        "text_input": "I am a 12 years old kid. I love indie video games and watch videos on youtube. Can you give me a list of components for my desktop PC",
+        "output": [
+          {
+            "name": "AMD Ryzen 5 5600G",
+            "price": "~$120",
+            "description": "CPU with integrated graphics, suitable for indie games and general use."
+          },
+          {
+            "name": "ASRock B550M Pro4",
+            "price": "~$100",
+            "description": "Reliable motherboard compatible with the Ryzen 5 5600G."
+          },
+          {
+            "name": "Corsair Vengeance LPX 16GB (2x8GB) DDR4 3200MHz",
+            "price": "~$50",
+            "description": "16GB of RAM for smooth gaming and multitasking."
+          },
+          {
+            "name": "Crucial MX500 1TB SATA SSD",
+            "price": "~$60",
+            "description": "Fast and affordable SSD for storage."
+          },
+          {
+            "name": "Fractal Design Focus G Mini",
+            "price": "~$60",
+            "description": "Compact and affordable PC case."
+          },
+          {
+            "name": "EVGA 500 BR, 80+ Bronze 500W",
+            "price": "~$50",
+            "description": "Reliable power supply unit."
+          }
+        ]
+      },
+      {
+        "text_input": "Tell me about rabies",
+        "output": []
+      }
+  ]
+  

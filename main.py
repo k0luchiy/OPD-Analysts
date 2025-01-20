@@ -6,16 +6,22 @@ import json
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters.command import Command
 from aiogram.filters import CommandStart
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton,\
+            InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.enums.parse_mode import ParseMode
+from aiogram.handlers import CallbackQueryHandler
 
 import ai_model
+import database
+import parser
 
 API_TOKEN = '7911900370:AAH8I5skyucy8wXUXPYLB4x3tNsgl0CJxiE'
 
 logging.basicConfig(level=logging.INFO)
+db = database.DB()
 
 bot = Bot(token=API_TOKEN)
-dp = Dispatcher() 
+dp = Dispatcher()
 
 user_choices = {}
 
@@ -38,12 +44,15 @@ def beautify_message(ai_response):
     
     for i in range(items_size):
         name = ai_response["items"][i]["name"]
+        url = parser.parse(name)
         description = ai_response["items"][i]["description"]
         price = ai_response["items"][i]["price"]
-        return_message += f"{i+1}. {name} - {description} - {price}\n"
+        return_message += f"{i+1}. [{name}]({url}) - {description} - {price} рублей\n"
+
+    return_message += "\nВы можете оставить оценку подберке с помощью кнопок ниже."
     return return_message
 
-def main_kb(user_telegram_id: int):
+def main_kb():
     kb_list = [
         [KeyboardButton(text="О нас"), KeyboardButton(text="Помощь")],
         [KeyboardButton(text="Сборка ПК"), KeyboardButton(text="Подбор ноутбука")]
@@ -52,10 +61,27 @@ def main_kb(user_telegram_id: int):
     return keyboard
 
 
-@dp.message(F.text == 'start')  
+@dp.message(CommandStart())   
 async def cmd_start(message):
-    await message.answer('Запуск сообщения по команде /start используя фильтр CommandStart()',
-                         reply_markup=main_kb(message.from_user.id))
+    try:
+        pass
+        db.create_user(message.from_user.id,message.from_user.username)
+    except Exception as e:
+        print(f"Failed because {e}")
+    
+    await message.answer('Привет, я ассистент, который может помочь вам собрать компьютер или подобрать ноутбук по вашим нуждам. Все что вам нужно сделать - это выбрать режим и написать ваши требования.',
+                        reply_markup=main_kb())
+
+
+@dp.message(F.text == 'О нас')  
+async def cmd_start(message):
+    await message.answer("Наша команда разработчиков: \nБастриков Вячеслав - тимлид \nВоронин Николай - Аналитик \nОсипов Антон - Разработчик \nРайх Татьяна - Аналитик", 
+                         reply_markup=main_kb())
+
+@dp.message(F.text == 'Помощь')  
+async def cmd_start(message):
+    await message.answer("*Работа с ботом:* \nЯ могу помочь вам собрать компьютер или подобрать ноутбук по вашим нуждам\. \nВсе что вам нужно сделать \- это выбрать режим работы \(сборка компьютера или подбор ноутбука\) и написать ваши требования\.", 
+                         reply_markup=main_kb(), parse_mode=ParseMode.MARKDOWN)
 
 
 @dp.message()
@@ -70,10 +96,29 @@ async def handle_message(message: types.Message):
         await process_select_laptop(message)
     elif user_id in user_choices:
         ai_response = ai_model.get_response(user_choices[user_id], message.text)
-        await message.reply(beautify_message(ai_response))
+        responseId = db.insert_response(message.from_user.id, message.text, ai_response)
+        
+        inline_buttons = [[]]
+        for i in range(1,6):
+            inline_buttons[0].append(InlineKeyboardButton(text=str(i), callback_data=f'review_response_{1}_{i}'))
+            inline_buttons[0].append(InlineKeyboardButton(text=str(i), callback_data=f'review_response_{responseId}_{i}'))
+
+        beutify_msg = beautify_message(ai_response)
+        keyboard = types.InlineKeyboardMarkup(inline_keyboard=inline_buttons)
+        await message.reply(beutify_msg, reply_markup=keyboard, parse_mode="Markdown")
+
+async def review_response(callback_query: types.CallbackQuery):
+    responseId, rating = callback_query.data.split("_")[-2:]
+    if rating.isdigit():
+        rating = int(rating)
+    print(callback_query.from_user.id, responseId, rating, "")
+    db.insert_rating(callback_query.from_user.id, responseId, rating, "")
+    await callback_query.answer("Спасибо что оценили данную подборку")
+
 
 
 async def main():
+    dp.callback_query.register(review_response, lambda c: c.data and c.data.startswith('review_response'))
     await dp.start_polling(bot)
 
 if __name__ == '__main__':
