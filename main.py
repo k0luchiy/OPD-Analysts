@@ -15,7 +15,7 @@ import ai_model
 import database
 import parser
 
-API_TOKEN = '7911900370:AAH8I5skyucy8wXUXPYLB4x3tNsgl0CJxiE'
+API_TOKEN = ''
 
 logging.basicConfig(level=logging.INFO)
 db = database.DB()
